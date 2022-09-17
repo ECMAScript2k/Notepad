@@ -1,0 +1,132 @@
+.flexcenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to right, rgb(0,0,0,0.3) 0% ,white 15% 90%,rgba(0,0,0,0.2));
+}
+*{
+    font-family: monospace;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+#navbar{
+    /* background-color:; */
+    border-bottom:4px solid ;
+    justify-content: space-between;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.notepadlogo{
+    margin-left: 10px;
+}
+.theme{
+    margin-right: 10px;
+}
+.mainbody{
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    height: 80vh;
+}
+#list{
+    display: flex;
+    flex-direction: column;
+    height: 75vh;
+    /* border: 4px solid rgb(0, 80, 0); */
+    padding: 5px;
+    padding-left: 0px;
+    border-radius: 0px 15px 15px 0px;
+    border-left: 0px;
+}
+    
+
+.newbutton{
+    height: 24px;
+    width: 97%;
+    padding: 5px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    background-image: linear-gradient(to right ,rgba(0,0,0,0), green);
+}
+#newnote{
+    display: block;
+    margin: auto;
+    height: 15px;
+    padding: 0px;
+    padding-bottom: 2px;
+    font-size: 0.8em;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255,255,255,0.5);
+}
+#ul{
+    border: 2px solid green;
+    border-radius: 0px 10px 10px 0px ;
+    height: 100%;
+    margin-right: 5px;
+    border-left: 0px;
+    padding: 10px;
+    list-style-type: none;
+    overflow: scroll;
+}
+.list{
+    margin: 2px;
+    height: 20px;
+    padding: 2px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.notepad{
+  
+    /* border: 4px solid rgb(0,80,0); */
+    height: 75vh;
+    padding: 5px;
+    padding-right: 0px;
+    border-radius: 15px 0px 0px 15px;
+    border-right: 0px;
+}
+#header{
+    height: 25px;
+    justify-content: space-between;
+    border-radius: 5px 0px 0px 5px;
+    background-image: linear-gradient(to left ,rgba(0,0,0,0), green);
+}
+#textarea{
+    margin: 13px;
+    margin-left: 0px;
+    height: calc(100% - 50px);
+    width: 100%;
+    border: 2px solid green;
+    border-right: 0px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgb(252, 255, 236);
+    resize: none;
+    padding: 5px;
+}
+#rename{
+    height: 15px;
+    margin: 0px 5px ;
+    border-radius: 2px;
+    border: none;
+    padding: 0px;
+    background: none;
+}
+#filename{
+    height: 16px;
+    width: 90%;
+}
+.theme{
+    display: none;
+}
+li{
+    border-left:5px solid rgb(249, 174, 0) ;
+}
+#opened{
+    background-image: linear-gradient(to right,rgb(249, 174, 0),rgba(0,0,0,0))
+}
