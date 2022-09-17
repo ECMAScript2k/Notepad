@@ -7,7 +7,7 @@ const ul=document.getElementById("ul")
 
 var opened;
 const notepad=document.querySelector(".notepad")
-// notepad.hidden=true    //-------------------------------------
+notepad.hidden=true    //-------------------------------------
 
 console.log(textarea.value)         //notelist=  innertext    time
 
