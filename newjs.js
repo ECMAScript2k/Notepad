@@ -96,3 +96,20 @@ function focusout(){
      const tochange=document.querySelector(str)
      tochange.innerText=filename.value
     }
+function deletenote(){
+    // console.log(opened)
+    ul.removeChild(opened)
+    notepad.hidden=true
+    openedtime=opened.attributes.time.value
+    localStorage.removeItem(openedtime)
+    x=x.filter(element=>element.time!=openedtime)
+    localStorage.setItem("notelist",JSON.stringify(x))
+
+}
+function download(){
+    const a=document.createElement('a')
+    a.href=`data:text/plain,${textarea.value}`;
+    a.download=`${filename.value}.txt`
+    document.body.appendChild(a)
+    a.click()
+}

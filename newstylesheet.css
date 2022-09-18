@@ -130,3 +130,41 @@ li{
 #opened{
     background-image: linear-gradient(to right,rgb(249, 174, 0),rgba(0,0,0,0))
 }
+#delete{
+    height: 15px;
+    margin: 0px 5px ;
+    border-radius: 2px;
+    border: none;
+    padding: 0px;
+    background: none;
+}
+#download{
+    height: 15px;
+    margin: 0px 5px ;
+    border-radius: 2px;
+    border: none;
+    padding: 0px;
+    background: none;
+}
+@media(width<800px){
+    *{
+        /* border: 2px solid red; */
+    }
+    .mainbody{
+        grid-template-columns: 1fr;
+    }
+    #ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* justify-content: space-between; */
+    }
+    .list{
+        display: inline-block;
+        width: 100px;     
+    }
+    #list{
+        height: 200px;
+    }
+
+}
