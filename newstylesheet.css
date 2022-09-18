@@ -146,7 +146,7 @@ li{
     padding: 0px;
     background: none;
 }
-@media(width<800px){
+@media(max-width:500px){
     *{
         /* border: 2px solid red; */
     }
